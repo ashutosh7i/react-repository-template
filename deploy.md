@@ -13,7 +13,7 @@ The process of deploying a Vite project on GitHub Pages.
 
 3. **Set the base in `vite.config.js`**
 
-  Update the `REPO-NAME` with the repository name or endpoint:
+    Update the `REPO-NAME` with the repository name or endpoint:
 
   ```javascript
   import { defineConfig } from 'vite'
@@ -25,13 +25,18 @@ The process of deploying a Vite project on GitHub Pages.
     plugins: [react()],
   })
   ```
-
   This sets the base URL for the project when it's deployed.
 
 4. **Update the deployment link in the README**
 
-  Replace the existing deployment link in repository's README file with the new GitHub Pages link.
+    Replace the existing deployment link in repository's README file with the new GitHub Pages link.
 
-5. **Commit and push your changes**
+5. **Manually enable Pages from repository settings**
+   
+    Go to your GitHub Pages configuration in the repository settings page and choose the source of deployment "GitHub Actions",yes this has been made manual recently due to security reasons by github.
 
-  Commit and push your changes to the repository. This will trigger the deployment process on GitHub Pages.
+7. **Commit and push your changes**
+
+    Commit and push your changes to the repository. This will trigger the deployment process on GitHub Pages.
+  
+8. **watch actions deploying your project and enjoy✨**
